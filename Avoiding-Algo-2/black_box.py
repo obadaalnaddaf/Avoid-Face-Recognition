@@ -4,7 +4,7 @@ import tensorflow as tf
 import matplotlib.pyplot as plt
 
 # === Load and preprocess the image ===
-image_path = 'target2.jpg'  # Use the same naming convention
+image_path = 'target1.jpg'  # Use the same naming convention
 image = cv2.imread(image_path)
 image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 image = cv2.resize(image, (224, 224))
