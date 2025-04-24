@@ -10,7 +10,6 @@ Rectangle Thickness: -1 (filled)
 
 Image Size: 224x224
 Preprocessing: MobileNetV2 preprocessing
-Model: Not used directly (manual occlusion)
-Libraries: OpenCV, NumPy, TensorFlow (not used for inference)
+Libraries: OpenCV, NumPy, TensorFlow 
 
 Result: Adversarial image saved as 'adversarial_output_blackbox.jpg'
