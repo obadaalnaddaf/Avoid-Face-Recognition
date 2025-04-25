@@ -1,15 +1,23 @@
-Algorithm: Black Box (Manual Occlusion)
+Algorithm: DeepFool Attack
 Target Image: target1.jpg
-Adversarial Image: adversarial_output_blackbox.jpg
+Adversarial Image: adversarial_output_deepfool.jpg
 
-Perturbation Technique: Black rectangle over eyes
-Start Point: (60, 80)
-End Point: (170, 130)
-Color: (0, 0, 0) [Black]
-Rectangle Thickness: -1 (filled)
+Perturbation Technique: Iterative minimal perturbations to fool classifier
+Overshoot: 18
+Scaling Factor: 23
+Max Iterations: 100
+Number of Classes Considered: 5
 
 Image Size: 224x224
-Preprocessing: MobileNetV2 preprocessing
-Libraries: OpenCV, NumPy, TensorFlow 
+Preprocessing: PyTorch transforms (Resize, ToTensor)
+Libraries: PyTorch, TorchVision, NumPy, Matplotlib
 
-Result: Adversarial image saved as 'adversarial_output_blackbox.jpg'
+Result:
+- Verified: False
+- Distance: 0.4128975189244517
+- Model used for verification: DeepFace (Facenet)
+
+Summary: 
+The DeepFool adversarial attack successfully fooled the face recognition model.
+The adversarial image appears visually similar to the original, 
+but is no longer verified as the same identity by DeepFace (Facenet).
