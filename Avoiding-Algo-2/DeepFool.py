@@ -20,7 +20,7 @@ transform = transforms.Compose([
 input_image = transform(image).unsqueeze(0).detach().requires_grad_()
 
 # === Enhanced DeepFool attack ===
-def deepfool(image, model, num_classes=12, overshoot=15, max_iter=200, scaling_factor=70):
+def deepfool(image, model, num_classes=5, overshoot=18, max_iter=100, scaling_factor=23):
     image = image.clone().detach().requires_grad_()
     f_image = model(image).detach().numpy().flatten()
     I = f_image.argsort()[::-1][:num_classes]
