@@ -11,7 +11,7 @@ model = models.resnet18(weights=weights)
 model.eval()
 
 # === Load and preprocess image ===
-image_path = 'target1.jpg'  # Make sure this image exists
+image_path = 'target1.jpg'  
 image = Image.open(image_path).convert('RGB')
 transform = transforms.Compose([
     transforms.Resize((224, 224)),
