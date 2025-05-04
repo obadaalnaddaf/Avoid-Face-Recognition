@@ -1,0 +1,9 @@
+torch==2.1.0
+torchvision==0.16.0
+numpy==1.24.4
+matplotlib==3.7.1
+opencv-python==4.8.0.76
+tensorflow==2.13.0
+keras==2.13.1
+deepface==0.0.79
+Pillow==9.5.0
