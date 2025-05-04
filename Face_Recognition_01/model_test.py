@@ -17,11 +17,12 @@ def resize_image(input_path, output_path, width=250, height=250):
 
 # === Image Paths ===
 original_img1 = "data_set/Jason_Statham/01.jpg"
-original_img2 = "data_set/Jason_Statham/03.jpg"
+original_img2 = "data_set/Jason_Statham/02.jpg"
 
 # Paths for resized images
 resized_img1 = "data_set/Jason_Statham/01_resized.jpg"
-resized_img2 = "data_set/Jason_Statham/03_resized.jpg"
+resized_img2 = "data_set/Jason_Statham/02_resized.jpg"
+new_image = "data_set/Jason_Statham/adver.png"
 
 # Resize both images
 resize_image(original_img1, resized_img1)
