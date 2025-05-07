@@ -67,3 +67,10 @@ To test **DeepFace** library using the **FaceNet** model on different face image
 ## Step 3: Testing:
     Once you run the DeepFool.py you will got a new image "adver.png" then copy it to "Face_Recognition_01/data_set/Jason_Statham/" and modify the code to test the new image.(Check line 33 in model_test.py "img1_path=resized_img1," ---> "img1_path=new_image,").
     Then Run the testing code again and check the results.
+
+
+## References
+
+For a detailed list of references, check the [References](References.md) page.
+
+
